@@ -1,0 +1,68 @@
+.body{
+    background-color: lightgrey;
+}
+
+.titre1 {
+font-size: 50px;
+font-weight: bold;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+text-align:center
+}
+
+.titre2 {
+font-size: 20px;
+color:red}
+
+.link {
+color: red;
+}
+
+.table {
+    border:none
+}
+.entete {
+border: none;
+background-color: black;
+color: white;
+text-align:center
+}
+
+.imp {
+    background-color: rgb(219, 219, 219);
+}
+
+.imp :hover {
+    background-color: rgb(170, 170, 170);
+}
+
+.pair {
+    background-color:rgb(177, 177, 177)
+}
+
+.pair :hover {
+    background-color: grey;
+}
+
+.caption {
+
+    background-color: rgb(0, 0, 0);
+    border: 2px, red;
+    color:rgb(177, 177, 177)
+}
+
+img {
+    max-height: auto;
+    max-width: 100%;
+}
+
+.para {
+    background-color: rgb(197, 197, 197);
+    color:blue;
+    border-style: dashed;
+}
+
+article {
+    position:relative;
+    width: 80%;
+    left: 10%;
+}
