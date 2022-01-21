@@ -5,51 +5,127 @@
     /* grid-template-columns: 50% 50%; */
     /* grid-template-columns: repeat(2, 1fr); */
     /* grid-template-rows: 300px 250px 100px 400px; */
-    grid-auto-rows: 400px;
+    /* grid-auto-rows: 400px;
     grid-gap: 2px;
     grid-template-areas:
         'one one one one'
         'deux deux deux trois'
         'quatre quatre cinq cinq'
         'six six six sept'
-        'huit huit huit huit';
+        'huit huit huit huit'; */
+  
+    grid-gap: 20px;
 }
 
 .item {
     font-size: 30px;
     font-weight: bold;
-    color: orangered;
-    background-color: indigo;
 }
 
 .item:nth-child(1) {
     grid-area: one;
+    height: 100px;
 }
 
 .item:nth-child(2) {
     grid-area: deux;
+    height:100px;
 }
 
 .item:nth-child(3) {
     grid-area: trois;
+    height:100px;
 }
 
 .item:nth-child(4) {
     grid-area: quatre;
+    height:100px;
 }
 
 .item:nth-child(5) {
     grid-area: cinq;
+    height:500px;
 }
 
 .item:nth-child(6) {
     grid-area: six;
+    height:400px;
+
 }
 
 .item:nth-child(7) {
     grid-area: sept;
+    height:185px;
 }
 
 .item:nth-child(8) {
     grid-area: huit;
+    height:185px;
 }
+
+.item:nth-child(9) {
+    grid-area: neuf;
+    height:300px;
+}
+
+
+@media screen and (min-width: 480px) {
+    .item {
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 254, 254);
+    }
+}
+
+    .container {
+        grid-template-areas:
+            'one deux trois quatre'
+            'cinq cinq cinq cinq'
+            'six six six sept'
+            'six six six huit'
+            'neuf neuf neuf neuf';
+    }
+
+@media screen and (min-width: 768px) {
+    .container {
+        grid-template-areas:
+            'one deux trois quatre'
+            'cinq cinq cinq cinq'
+            'six six six sept'
+            'six six six huit'
+            'neuf neuf neuf neuf';
+    }
+
+    .item {
+        color: orangered;
+        background-color: yellow;
+    }
+
+@media screen and (min-width: 992px) {
+    .container {
+        grid-template-areas:
+      'one deux trois quatre'
+            'cinq cinq cinq cinq'
+            'six six six sept'
+            'six six six huit'
+            'neuf neuf neuf neuf';
+    }
+
+    .item {
+        color: orangered;
+        background-color: green;
+    }
+
+@media screen and (min-width: 1200px) {
+    .container {
+        grid-template-areas:
+          'one deux trois quatre'
+            'cinq cinq cinq cinq'
+            'six six six sept'
+            'six six six huit'
+            'neuf neuf neuf neuf';
+    }
+    .item {
+        color: rgb(19, 19, 19);
+        background-color: rgb(255, 255, 255);
+        border:1px solid grey
+    }
